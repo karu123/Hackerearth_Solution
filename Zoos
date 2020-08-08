@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char str[20];
+	int i;
+	int count = 0;
+	int counto = 0;
+	int len;
+ 
+	scanf("%s",&str);
+	len = strlen(str);
+	
+	
+	for(i=0;i<len;i++)
+	{
+		if(str[i] == 'z')
+		{
+			count++;
+		}
+		if(str[i]=='o')
+		{
+			counto++;
+		}
+	}
+	if(count*2 == counto)
+	{
+		printf("Yes");
+	}
+	else
+	{
+		printf("No");
+	}
+	
+	return 0;
+ 
+}
